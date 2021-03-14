@@ -1,0 +1,8 @@
+ for (int i = 1; i <= n; i++)
+    {
+        // divide the rod of length i into two rods of length j
+        // and i-j each and take maximum
+        for (int j = 1; j <= i; j++)
+            T[i] = max(T[i], price[j - 1] + T[i - j]);
+    }
+ 

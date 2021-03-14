@@ -1,0 +1,13 @@
+  for (int i = 1; i <= n; i++)
+    {
+        // consider all sum from 1 to sum
+        for (int j = 1; j <= sum; j++)
+        {
+            // don't include ith element if j-arr[i-1] is negative
+            if (arr[i - 1] > j)
+                T[i][j] = T[i - 1][j];
+            else
+            // find subset with sum j by excluding or including the ith item
+                T[i][j] = T[i - 1][j] || T[i - 1][j - arr[i - 1]];
+        }
+    }

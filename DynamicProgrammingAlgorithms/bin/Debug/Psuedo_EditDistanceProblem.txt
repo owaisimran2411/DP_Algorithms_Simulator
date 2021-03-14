@@ -1,0 +1,14 @@
+ for (int i = 1; i <= m; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (X[ i -  1] == Y[ j - 1 ])                // (case 2)
+                substitutionCost = 0;                // (case 2)
+            else
+                substitutionCost = 1;                // (case 3c)
+ 
+            T[i][j] = min(min(T[i - 1][j] + 1,       // deletion (case 3b)
+                              T[i][j - 1] + 1),      // insertion (case 3a)
+                T[i - 1][j - 1] + substitutionCost); // replace (case 2 & 3c)
+        }
+    }

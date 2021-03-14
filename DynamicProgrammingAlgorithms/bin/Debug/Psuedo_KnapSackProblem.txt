@@ -1,0 +1,13 @@
+for (int i = 1; i <= n; i++)
+    {
+        // consider all weights from 0 to maximum capacity W
+        for (int w = 0; w <= W; w++)
+        {
+            // don't include ith element if j-w[i-1] is negative
+            if (w[ i - 1 ] > j)
+                T[ i ][ j ] = T[ i - 1 ][ j ];
+            else
+            // find max value by excluding or including the ith item
+                T[ i ][ j ]  = max( T[ i - 1 ][ j ], T[ i - 1 ][ j - w [ i - 1 ] ] + v[ i - 1 ] );
+        }
+    }

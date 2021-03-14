@@ -1,0 +1,29 @@
+ for (int i=1; i<=size; i++) 
+    { 
+        // if wb[i] is false, then check if current prefix can make it true. 
+        // Current prefix is "str.substr(0, i)" 
+        if (wb[i] == false && dictionaryContains( str.substr(0, i) )) 
+            wb[i] = true; 
+  
+        // wb[i] is true, then check for all substrings starting from 
+        // (i+1)th character and store their results. 
+        if (wb[i] == true) 
+        { 
+            // If we reached the last prefix 
+            if (i == size) 
+                return true; 
+  
+            for (int j = i+1; j <= size; j++) 
+            { 
+                // Update wb[j] if it is false and can be updated 
+                // Note the parameter passed to dictionaryContains() is 
+                // substring starting from index 'i' and length 'j-i' 
+                if (wb[j] == false && dictionaryContains( str.substr(i, j-i) )) 
+                    wb[j] = true; 
+  
+                // If we reached the last character 
+                if (j == size && wb[j] == true) 
+                    return true; 
+            } 
+        } 
+    } 
