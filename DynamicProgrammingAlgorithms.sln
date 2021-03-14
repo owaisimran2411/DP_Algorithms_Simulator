@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgrammingAlgorithms", "DynamicProgrammingAlgorithms\DynamicProgrammingAlgorithms.csproj", "{3F91C5E5-C3AE-4146-B57D-D491AEEC646B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F91C5E5-C3AE-4146-B57D-D491AEEC646B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F91C5E5-C3AE-4146-B57D-D491AEEC646B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F91C5E5-C3AE-4146-B57D-D491AEEC646B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F91C5E5-C3AE-4146-B57D-D491AEEC646B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9626F1E-8DE0-48C8-887F-C7AAA8C6F633}
+	EndGlobalSection
+EndGlobal
