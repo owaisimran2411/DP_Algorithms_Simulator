@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F91C5E5-C3AE-4146-B57D-D491AEEC646B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DynamicProgrammingAlgorithms</RootNamespace>
+    <AssemblyName>DynamicProgrammingAlgorithms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="0-1KnapSackProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0-1KnapSackProblem.Designer.cs">
+      <DependentUpon>0-1KnapSackProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChainMatrixMultiplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChainMatrixMultiplication.Designer.cs">
+      <DependentUpon>ChainMatrixMultiplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinChangeMakingProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoinChangeMakingProblem.Designer.cs">
+      <DependentUpon>CoinChangeMakingProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputChainMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputChainMatrix.Designer.cs">
+      <DependentUpon>InputChainMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputEditDistance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputEditDistance.Designer.cs">
+      <DependentUpon>InputEditDistance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputKnapSack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputKnapSack.Designer.cs">
+      <DependentUpon>InputKnapSack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputLongestCommonSubsequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputLongestCommonSubsequence.Designer.cs">
+      <DependentUpon>InputLongestCommonSubsequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputLongestIncreasingSubSequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputLongestIncreasingSubSequence.Designer.cs">
+      <DependentUpon>InputLongestIncreasingSubSequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPartitionProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPartitionProblem.Designer.cs">
+      <DependentUpon>InputPartitionProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputShortestCommonSupersequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputShortestCommonSupersequence.Designer.cs">
+      <DependentUpon>InputShortestCommonSupersequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevenshetinEditDistance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevenshetinEditDistance.Designer.cs">
+      <DependentUpon>LevenshetinEditDistance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LongestCommonSubsequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LongestCommonSubsequence.Designer.cs">
+      <DependentUpon>LongestCommonSubsequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LongestIncreasingSubsequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LongestIncreasingSubsequence.Designer.cs">
+      <DependentUpon>LongestIncreasingSubsequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartitionProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartitionProblem.Designer.cs">
+      <DependentUpon>PartitionProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RodCuttingProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RodCuttingProblem.Designer.cs">
+      <DependentUpon>RodCuttingProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShortestCommonSuperSequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShortestCommonSuperSequence.Designer.cs">
+      <DependentUpon>ShortestCommonSuperSequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WordBreakProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordBreakProblem.Designer.cs">
+      <DependentUpon>WordBreakProblem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="0-1KnapSackProblem.resx">
+      <DependentUpon>0-1KnapSackProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChainMatrixMultiplication.resx">
+      <DependentUpon>ChainMatrixMultiplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinChangeMakingProblem.resx">
+      <DependentUpon>CoinChangeMakingProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputChainMatrix.resx">
+      <DependentUpon>InputChainMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputEditDistance.resx">
+      <DependentUpon>InputEditDistance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputKnapSack.resx">
+      <DependentUpon>InputKnapSack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputLongestCommonSubsequence.resx">
+      <DependentUpon>InputLongestCommonSubsequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputLongestIncreasingSubSequence.resx">
+      <DependentUpon>InputLongestIncreasingSubSequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPartitionProblem.resx">
+      <DependentUpon>InputPartitionProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputShortestCommonSupersequence.resx">
+      <DependentUpon>InputShortestCommonSupersequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevenshetinEditDistance.resx">
+      <DependentUpon>LevenshetinEditDistance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LongestCommonSubsequence.resx">
+      <DependentUpon>LongestCommonSubsequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LongestIncreasingSubsequence.resx">
+      <DependentUpon>LongestIncreasingSubsequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartitionProblem.resx">
+      <DependentUpon>PartitionProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RodCuttingProblem.resx">
+      <DependentUpon>RodCuttingProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShortestCommonSuperSequence.resx">
+      <DependentUpon>ShortestCommonSuperSequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordBreakProblem.resx">
+      <DependentUpon>WordBreakProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
